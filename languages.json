@@ -1,0 +1,473 @@
+﻿[
+ ["O programa já está aberto.", "El programa ya está abierto.", "The program is already open."],
+ [
+  "Ampliar esquema",
+  "Ampliar esquema",
+  "Enlarge diagram"
+ ],
+ [
+  "Início",
+  "Inicio",
+  "Home"
+ ],
+ [
+  "Saída",
+  "Salida",
+  "Output"
+ ],
+ [
+  "Avançadas",
+  "Avanzadas",
+  "Advanced"
+ ],
+ [
+  "Informação básica",
+  "Información básica",
+  "Basic information"
+ ],
+ [
+  "Antenas",
+  "Antenas",
+  "Antennas"
+ ],
+ [
+  "Relés de saída",
+  "Relés de salida",
+  "Output relays"
+ ],
+ [
+  "Bandas",
+  "Bandas",
+  "Bands"
+ ],
+ [
+  "Rede",
+  "Red",
+  "Network"
+ ],
+ [
+  "Opções avançadas",
+  "Opciones avanzadas",
+  "Advanced options"
+ ],
+ [
+  "Sobre",
+  "Acerca de",
+  "About"
+ ],
+ [
+  "Idioma",
+  "Idioma",
+  "Language"
+ ],
+ [
+  "Nome do equipamento:",
+  "Nombre del equipo:",
+  "Device name:"
+ ],
+ [
+  "Nome:",
+  "Nombre:",
+  "Name:"
+ ],
+ [
+  "Bandas:",
+  "Bandas:",
+  "Bands:"
+ ],
+ [
+  "Banda",
+  "Banda",
+  "Band"
+ ],
+ [
+  "Nome da banda:",
+  "Nombre de banda:",
+  "Band name:"
+ ],
+ [
+  "Intervalo de frequência (MHz):",
+  "Rango de frecuencia (MHz):",
+  "Frequency range (MHz):"
+ ],
+ [
+  "Número de série:",
+  "Número de serie:",
+  "Serial number:"
+ ],
+ [
+  "Procurar",
+  "Buscar",
+  "Search"
+ ],
+ [
+  "Antena:",
+  "Antena:",
+  "Antenna:"
+ ],
+ [
+  "Aplicar",
+  "Aplicar",
+  "Apply"
+ ],
+ [
+  "Guardar",
+  "Guardar",
+  "Save"
+ ],
+ [
+  "Cancelar",
+  "Cancelar",
+  "Cancel"
+ ],
+ [
+  "Guardar e ligar",
+  "Guardar y conectar",
+  "Save and connect"
+ ],
+ [
+  "Local",
+  "Local",
+  "Local"
+ ],
+ [
+  "Remota",
+  "Remota",
+  "Remote"
+ ],
+ [
+  "Automático (DHCP)",
+  "Automático (DHCP)",
+  "Automatic (DHCP)"
+ ],
+ [
+  "Endereço IP",
+  "Dirección IP",
+  "IP address"
+ ],
+ [
+  "Máscara de rede",
+  "Máscara de red",
+  "Subnet mask"
+ ],
+ [
+  "Gateway",
+  "Puerta de enlace",
+  "Gateway"
+ ],
+ [
+  "Ligação:",
+  "Conexión:",
+  "Connection:"
+ ],
+ [
+  "Hostname / IP:",
+  "Hostname / IP:",
+  "Hostname / IP:"
+ ],
+ [
+  "Palavra-passe remota:",
+  "Contraseña remota:",
+  "Remote password:"
+ ],
+ [
+  "Alterar a rede reinicia o equipamento ao guardar.",
+  "Al guardar los cambios de red, el equipo se reinicia.",
+  "Saving network changes restarts the device."
+ ],
+ [
+  "Guardada com proteção do Windows. A ligação muda ao guardar.",
+  "Protegida por Windows. La conexión cambia al guardar.",
+  "Protected by Windows. Connection changes when saved."
+ ],
+ [
+  "Ligação local / remota",
+  "Conexión local / remota",
+  "Local / remote connection"
+ ],
+ [
+  "Porta Inband:",
+  "Puerto Inband:",
+  "Inband port:"
+ ],
+ [
+  "A configuração de bandas é apresentada em Bandas.",
+  "La configuración de bandas se encuentra en Bandas.",
+  "Band configuration is available under Bands."
+ ],
+ [
+  "As opções específicas continuam no utilitário original.",
+  "Las opciones específicas siguen en la utilidad original.",
+  "Specific options remain in the original utility."
+ ],
+ [
+  "Consulta. Configuração de Stack no utilitário original.",
+  "Solo consulta. Configure Stack en la utilidad original.",
+  "Read only. Configure Stack in the original utility."
+ ],
+ [
+  "Sem relés ou grupos configurados.",
+  "No hay relés ni grupos configurados.",
+  "No relays or groups configured."
+ ],
+ [
+  "Consulta. Edição de relés no utilitário original.",
+  "Solo consulta. Edite los relés en la utilidad original.",
+  "Read only. Edit relays in the original utility."
+ ],
+ [
+  "Importação, reposição de fábrica e reinício continuam no utilitário original.",
+  "Importación, restablecimiento de fábrica y reinicio en la utilidad original.",
+  "Import, factory reset and restart remain in the original utility."
+ ],
+ [
+  "Ligação Local/Remota",
+  "Conexión local/remota",
+  "Local/Remote connection"
+ ],
+ [
+  "Desenvolvido por Eduardo Arraia - CT7ASY",
+  "Desarrollado por Eduardo Arraia - CT7ASY",
+  "Developed by Eduardo Arraia - CT7ASY"
+ ],
+ [
+  "Software de distribuição gratuita.",
+  "Software de distribución gratuita.",
+  "Free distribution software."
+ ],
+ [
+  "Verificar atualizações",
+  "Buscar actualizaciones",
+  "Check for updates"
+ ],
+ [
+  "Visitar 4O3A",
+  "Visitar 4O3A",
+  "Visit 4O3A"
+ ],
+ [
+  "AG 4O3A | Definições",
+  "AG 4O3A | Configuración",
+  "AG 4O3A | Settings"
+ ],
+ [
+  "AG 4O3A | Definições - Aplicado",
+  "AG 4O3A | Configuración - Aplicada",
+  "AG 4O3A | Settings - Applied"
+ ],
+ [
+  "AG 4O3A | Definições - A aguardar ligação",
+  "AG 4O3A | Configuración - Esperando conexión",
+  "AG 4O3A | Settings - Waiting for connection"
+ ],
+ [
+  "AG 4O3A | Ligação",
+  "AG 4O3A | Conexión",
+  "AG 4O3A | Connection"
+ ],
+ [
+  "Versão ",
+  "Versión ",
+  "Version "
+ ],
+ [
+  "Série: ",
+  "Serie: ",
+  "Serial: "
+ ],
+ [
+  "FlexRadio | Porta ",
+  "FlexRadio | Puerto ",
+  "FlexRadio | Port "
+ ],
+ [
+  "Ativo: ",
+  "Activo: ",
+  "Active: "
+ ],
+ [
+  "Modo: ",
+  "Modo: ",
+  "Mode: "
+ ],
+ [
+  "Proteção de banda: ",
+  "Protección de banda: ",
+  "Band protection: "
+ ],
+ [
+  "inativa",
+  "inactiva",
+  "disabled"
+ ],
+ [
+  "ativa",
+  "activa",
+  "enabled"
+ ],
+ [
+  " (consulta)",
+  " (solo lectura)",
+  " (read only)"
+ ],
+ [
+  "Nenhum equipamento",
+  "Ningún equipo",
+  "No device"
+ ],
+ [
+  "A procurar equipamentos...",
+  "Buscando equipos...",
+  "Searching for devices..."
+ ],
+ [
+  "Nenhum rádio detetado. A seleção atual foi mantida.",
+  "No se detectó ninguna radio. Se mantiene la selección actual.",
+  "No radio detected. Current selection retained."
+ ],
+ [
+  "Sem ligação",
+  "Sin conexión",
+  "Disconnected"
+ ],
+ [
+  "Desligar A",
+  "Desconectar A",
+  "Disconnect A"
+ ],
+ [
+  "Desligar B",
+  "Desconectar B",
+  "Disconnect B"
+ ],
+ [
+  "Definições",
+  "Configuración",
+  "Settings"
+ ],
+ [
+  "Ativar Stack (16 × 2)",
+  "Activar Stack (16 × 2)",
+  "Enable stacking (16 × 2)"
+ ],
+ [
+  "Número de série do AG:",
+  "Número de serie del AG:",
+  "AG serial number:"
+ ],
+ [
+  "Tipo de comutação:",
+  "Tipo de conmutación:",
+  "Switching type:"
+ ],
+ [
+  "Preparado para um segundo Antenna Genius. Ativação ainda indisponível nesta versão.",
+  "Preparado para un segundo Antenna Genius. Activación aún no disponible.",
+  "Prepared for a second Antenna Genius. Activation is not yet available."
+ ],
+ [
+  "Proteção de banda",
+  "Protección de banda",
+  "Band protection"
+ ],
+ [
+  "Impede a utilização da mesma banda nas portas A e B em simultâneo.",
+  "Evita usar la misma banda en los puertos A y B simultáneamente.",
+  "Prevents using the same band on ports A and B simultaneously."
+ ],
+ [
+  "Exportar configuração",
+  "Exportar configuración",
+  "Export configuration"
+ ],
+ [
+  "Importar configuração",
+  "Importar configuración",
+  "Import configuration"
+ ],
+ [
+  "Ficheiros AG 4O3A: antenas, bandas, FlexRadio e opções. Não incluem rede, Stack, relés ou palavras-passe.",
+  "Archivos AG 4O3A: antenas, bandas, FlexRadio y opciones. No incluyen red, Stack, relés ni contraseñas.",
+  "AG 4O3A files: antennas, bands, FlexRadio and options. Excludes network, Stack, relays and passwords."
+ ],
+ [
+  "Reiniciar",
+  "Reiniciar",
+  "Restart"
+ ],
+ [
+  "Repor definições de fábrica",
+  "Restablecer de fábrica",
+  "Factory reset"
+ ],
+ [
+  "Editor de relés de saída",
+  "Editor de relés de salida",
+  "Output relay designer"
+ ],
+ [
+  "Grupos de saída",
+  "Grupos de salida",
+  "Output groups"
+ ],
+ [
+  "Ainda não existem grupos configurados.",
+  "Todavía no hay grupos configurados.",
+  "No groups are configured yet."
+ ],
+ [
+  "Nome do grupo:",
+  "Nombre del grupo:",
+  "Group name:"
+ ],
+ [
+  "Ativação do grupo:",
+  "Activación del grupo:",
+  "Group activation:"
+ ],
+ [
+  "Permitir nenhuma saída ativa",
+  "Permitir ninguna salida activa",
+  "Allow no active output"
+ ],
+ [
+  "Saídas do grupo",
+  "Salidas del grupo",
+  "Group outputs"
+ ],
+ [
+  "Editor preparado. A criação e a edição de grupos ficam disponíveis numa próxima versão.",
+  "Editor preparado. La creación y edición de grupos estarán disponibles en una próxima versión.",
+  "Designer prepared. Creating and editing groups will be available in a future version."
+ ],
+ [
+  "Organize os relés em grupos de saída.",
+  "Organice los relés en grupos de salida.",
+  "Organize relays into output groups."
+ ],
+ [
+  "Abrir editor de relés",
+  "Abrir editor de relés",
+  "Open relay designer"
+ ],
+ [
+  "Preparado para utilização futura. A configuração dos relés mantém-se no utilitário original.",
+  "Preparado para uso futuro. Configure los relés en la utilidad original.",
+  "Prepared for future use. Configure relays in the original utility."
+ ],
+ [
+  "Equipamento / número de série:",
+  "Equipo / número de serie:",
+  "Device / serial number:"
+ ],
+ [
+  "equipamento(s) encontrado(s).",
+  "equipo(s) encontrado(s).",
+  "device(s) found."
+ ],
+ [
+  "O endereço de atualizações ainda não está configurado.",
+  "La dirección de actualizaciones aún no está configurada.",
+  "The update address is not configured yet."
+ ]
+]

@@ -1,0 +1,8 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
+namespace AG4O3A {
+class AGLanguageFlags:Control {
+ public AGLanguageFlags(){SetStyle(ControlStyles.UserPaint|ControlStyles.AllPaintingInWmPaint|ControlStyles.OptimizedDoubleBuffer,true);TabStop=false;}
+ protected override void OnPaint(PaintEventArgs e){base.OnPaint(e);var g=e.Graphics;var overall=g.Save();g.ScaleTransform(Width/104f,Height/24f);g.SmoothingMode=System.Drawing.Drawing2D.SmoothingMode.AntiAlias;for(int i=0;i<3;i++){var state=g.Save();g.TranslateTransform(i*36,2);g.SetClip(new Rectangle(0,0,30,20));if(i==0){using(var fill=new SolidBrush(Color.FromArgb(220,35,45)))g.FillRectangle(fill,0,0,30,20);using(var green=new SolidBrush(Color.FromArgb(0,125,65)))g.FillRectangle(green,0,0,12,20);g.FillEllipse(Brushes.Gold,8,6,8,8);g.FillRectangle(Brushes.WhiteSmoke,11,7,3,6);g.FillRectangle(Brushes.Crimson,12,8,1,4);}else if(i==1){using(var fill=new SolidBrush(Color.FromArgb(190,25,40)))g.FillRectangle(fill,0,0,30,20);g.FillRectangle(Brushes.Gold,0,5,30,10);g.FillRectangle(Brushes.Crimson,8,8,3,5);}else{using(var fill=new SolidBrush(Color.FromArgb(1,33,105)))g.FillRectangle(fill,0,0,30,20);using(var white=new Pen(Color.White,5)){g.DrawLine(white,0,0,30,20);g.DrawLine(white,0,20,30,0);}using(var red=new Pen(Color.FromArgb(200,16,46),2)){g.DrawLine(red,0,0,30,20);g.DrawLine(red,0,20,30,0);}g.FillRectangle(Brushes.White,12,0,6,20);g.FillRectangle(Brushes.White,0,7,30,6);g.FillRectangle(Brushes.Crimson,14,0,2,20);g.FillRectangle(Brushes.Crimson,0,9,30,2);}g.Restore(state);}g.Restore(overall);}
+}
+}
