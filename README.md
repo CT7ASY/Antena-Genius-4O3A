@@ -1,6 +1,26 @@
 # AG 4O3A
 
-Aplicação Windows gratuita para controlar o Antenna Genius v4 (8 antenas), desenvolvida por **Eduardo Arraia — CT7ASY**.
+Controlo do Antenna Genius v4, com ligação local ou remota e integração FlexRadio.
+
+**Desenvolvido por Eduardo Arraia — CT7ASY.**
+
+Software de distribuição gratuita para Windows.
+
+**[Descarregar a versão mais recente para Windows](https://github.com/CT7ASY/Antena-Genius-4O3A/releases/latest)**
+
+![AG 4O3A — janela principal em demonstração](images/ag4o3a.png)
+
+## Funcionalidades
+
+- Seleção e desligamento de antenas nas portas A e B.
+- Transferência de antenas entre portas, com verificações de transmissão.
+- Integração FlexRadio, descoberta de rádios e acompanhamento de banda.
+- Ligação local ou remota e configuração de DHCP, IP, máscara e gateway.
+- Configuração de antenas e bandas, com diagramas BCD e P2P.
+- Interface em português, espanhol e inglês.
+- Janela redimensionável, fontes proporcionais e posições memorizadas.
+- Instância única e importação/exportação das definições suportadas.
+- Acesso às novas versões em **Sobre → Verificar atualizações**.
 
 ## Transferir e instalar
 
@@ -12,16 +32,9 @@ Na [versão mais recente](https://github.com/CT7ASY/Antena-Genius-4O3A/releases/
 
 A aplicação instalada não precisa de PowerShell. As preferências ficam em `%LOCALAPPDATA%\CT7ASY\AG4O3A`; a palavra-passe remota é protegida pelo Windows para o utilizador atual.
 
-## Funcionalidades
+Consulte as [instruções de instalação](INSTALACAO.txt), o [histórico de versões](CHANGELOG.md) e os [resumos SHA-256 da versão 1.0.0](SHA256SUMS.txt).
 
-- Ligação local ou remota, configuração de DHCP, IP, máscara e gateway.
-- Seleção e desligamento de antenas nas portas A e B, com transferência entre portas e verificações de transmissão.
-- Integração FlexRadio, descoberta de rádios e acompanhamento de banda.
-- Configuração de antenas e bandas, diagramas BCD e P2P.
-- Idiomas português, espanhol e inglês.
-- Janela redimensionável, fontes proporcionais, posições memorizadas e instância única.
-- Importação e exportação das definições suportadas.
-- Acesso às novas versões através de **Sobre → Verificar atualizações**.
+## Funcionalidades em preparação
 
 Os separadores Stack e Saída estão preparados para consulta; a edição ainda não está disponível. A exportação inclui antenas, bandas, FlexRadio e opções avançadas, mas exclui rede, Stack, relés e palavras-passe. O botão de atualizações abre a página das Releases; não instala atualizações automaticamente.
 
