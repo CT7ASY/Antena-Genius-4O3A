@@ -8,7 +8,7 @@ Software de distribuição gratuita para Windows.
 
 **[Descarregar a versão mais recente para Windows](https://github.com/CT7ASY/Antena-Genius-4O3A/releases/latest)**
 
-![AG 4O3A — janela principal em demonstração](images/ag4o3a.png)
+![AG 4O3A — janela principal em demonstração](AG4O3A/images/ag4o3a.png)
 
 ## Funcionalidades
 
@@ -32,7 +32,7 @@ Na [versão mais recente](https://github.com/CT7ASY/Antena-Genius-4O3A/releases/
 
 A aplicação instalada não precisa de PowerShell. As preferências ficam em `%LOCALAPPDATA%\CT7ASY\AG4O3A`; a palavra-passe remota é protegida pelo Windows para o utilizador atual.
 
-Consulte as [instruções de instalação](INSTALACAO.txt), o [histórico de versões](CHANGELOG.md) e os [resumos SHA-256 da versão 1.0.0](SHA256SUMS.txt).
+Consulte as [instruções de instalação](AG4O3A/INSTALACAO.txt), o [histórico de versões](AG4O3A/CHANGELOG.md) e os [resumos SHA-256 da versão 1.0.0](AG4O3A/SHA256SUMS.txt).
 
 ## Funcionalidades em preparação
 
@@ -40,7 +40,7 @@ Os separadores Stack e Saída estão preparados para consulta; a edição ainda 
 
 ## Compilar
 
-Todos os ficheiros do projeto estão nesta pasta `AG4O3A`. O código utiliza C# e Windows Forms, com .NET Framework 4.8. No Windows, a partir da raiz do repositório, execute:
+O código e os restantes ficheiros do projeto estão na pasta [AG4O3A](AG4O3A). O código utiliza C# e Windows Forms, com .NET Framework 4.8. No Windows, a partir da raiz do repositório, execute:
 
 ```powershell
 cd AG4O3A
@@ -69,6 +69,6 @@ Estes testes usam dados de demonstração e guardam os resultados e capturas num
 
 ## Licença e contactos
 
-Software de distribuição gratuita, com código-fonte sob a [licença MIT](LICENSE).
+Software de distribuição gratuita, com código-fonte sob a [licença MIT](AG4O3A/LICENSE).
 Problemas e sugestões: [Issues](https://github.com/CT7ASY/Antena-Genius-4O3A/issues).
 Fabricante do equipamento: [4O3A](https://4o3a.com/).
