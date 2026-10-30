@@ -40,7 +40,7 @@ Os separadores Stack e Saída estão preparados para consulta; a edição ainda 
 
 ## Compilar
 
-Os ficheiros da aplicação estão na pasta [AG4O3A](AG4O3A). O código utiliza C# e Windows Forms, com .NET Framework 4.8. No Windows, entre nessa pasta e execute:
+Todos os ficheiros do projeto estão nesta pasta `AG4O3A`. O código utiliza C# e Windows Forms, com .NET Framework 4.8. No Windows, a partir da raiz do repositório, execute:
 
 ```powershell
 cd AG4O3A

@@ -6,7 +6,7 @@ AppVersion={#AppVersion}
 AppPublisher=Eduardo Arraia - CT7ASY
 AppPublisherURL=https://github.com/CT7ASY/Antena-Genius-4O3A
 AppUpdatesURL=https://github.com/CT7ASY/Antena-Genius-4O3A/releases/latest
-LicenseFile=..\LICENSE
+LicenseFile=LICENSE
 DefaultDirName=C:\CT7ASY\AG 4O3A
 UsePreviousAppDir=no
 DefaultGroupName=AG 4O3A
@@ -32,7 +32,7 @@ Source: "build\AG4O3A.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "AG4O3A.exe.config"; DestDir: "{app}"; Flags: ignoreversion
 Source: "languages.json"; DestDir: "{app}"; Flags: ignoreversion
 Source: "LEIA-ME.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\LICENSE"; DestDir: "{app}"; Flags: ignoreversion
+Source: "LICENSE"; DestDir: "{app}"; Flags: ignoreversion
 [Icons]
 Name: "{userprograms}\AG 4O3A"; Filename: "{app}\AG4O3A.exe"; Check: NotTestInstall
 Name: "{userdesktop}\AG 4O3A"; Filename: "{app}\AG4O3A.exe"; Check: NotTestInstall

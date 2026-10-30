@@ -8,6 +8,6 @@ $sources=@(Get-ChildItem -LiteralPath $PSScriptRoot -Filter '*.cs' | ForEach-Obj
 & $compiler /nologo /target:winexe /optimize+ "/out:$build\AG4O3A.exe" "/win32icon:$PSScriptRoot\AG4O3A.ico" "/win32manifest:$PSScriptRoot\AG4O3A.manifest" /reference:System.Windows.Forms.dll /reference:System.Drawing.dll /reference:System.Web.Extensions.dll /reference:System.Security.dll $sources
 if($LASTEXITCODE -ne 0){throw 'Falha na compilação C#.'}
 foreach($name in @('AG4O3A.exe.config','languages.json','LEIA-ME.txt')){Copy-Item -LiteralPath (Join-Path $PSScriptRoot $name) -Destination $build -Force}
-Copy-Item -LiteralPath (Join-Path $PSScriptRoot '..\LICENSE') -Destination $build -Force
+Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'LICENSE') -Destination $build -Force
 if($InnoCompiler){& $InnoCompiler /Q (Join-Path $PSScriptRoot 'Instalar-AG4O3A.iss');if($LASTEXITCODE -ne 0){throw 'Falha na compilação do instalador.'}}
 Write-Output 'Compilação concluída.'
