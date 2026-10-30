@@ -1,6 +1,9 @@
 /build/
 /dist/
 /test-results/
+/AG4O3A/build/
+/AG4O3A/dist/
+/AG4O3A/test-results/
 *.log
 *.pdb
 connection.json
