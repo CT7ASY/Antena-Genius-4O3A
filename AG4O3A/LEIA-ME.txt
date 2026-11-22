@@ -1,4 +1,4 @@
-﻿AG 4O3A 1.0.5
+﻿AG 4O3A 1.0.6
 Desenvolvido por Eduardo Arraia - CT7ASY
 Software de distribuição gratuita.
 
@@ -6,7 +6,7 @@ Aplicação Windows compilada em C# / .NET Framework 4.8.
 Não utiliza PowerShell para executar a aplicação.
 
 INSTALAÇÃO
-Feche a versão anterior. Execute Instalar-AG-4O3A-1.0.5.exe.
+Feche a versão anterior. Execute Instalar-AG-4O3A-1.0.6.exe.
 Abra AG 4O3A pelo atalho do Ambiente de Trabalho ou pelo menu Iniciar.
 Na primeira utilização, abra a engrenagem e indique o IP do seu equipamento.
 O endereço local inicial é 127.0.0.1; o remoto é apenas um exemplo.
@@ -29,7 +29,10 @@ Ao fechar a aplicação ligada ao AG, cada porta com FlexRadio configurado
 passa para AUTO. Se a caixa não confirmar, a aplicação permite cancelar a saída.
 
 Stack e o editor de relés estão preparados para consulta; edição ainda indisponível.
-O botão Verificar atualizações abre a versão mais recente nas Releases do GitHub.
+A aplicação verifica novas versões ao iniciar. Se houver uma atualização,
+mostra o botão Atualizar. Também pode verificar em Sobre > Verificar atualizações.
+O instalador é descarregado e verificado antes de abrir. As definições são mantidas.
+O Windows poderá pedir autorização para executar o instalador.
 Importação/exportação AG 4O3A inclui antenas, bandas, FlexRadio e opções;
 não inclui rede, Stack, relés ou palavras-passe. Importar só preenche os campos:
 é necessário Aplicar ou Guardar para enviar alterações ao equipamento.

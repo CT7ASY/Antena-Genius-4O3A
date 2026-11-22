@@ -1,5 +1,14 @@
 ﻿[
  ["O programa já está aberto.", "El programa ya está abierto.", "The program is already open."],
+ ["Já tem a versão mais recente.","Ya tiene la versión más reciente.","You already have the latest version."],
+ ["Não foi possível verificar as atualizações.","No se pudieron comprobar las actualizaciones.","Could not check for updates."],
+ ["Atualização disponível","Actualización disponible","Update available"],
+ ["As suas definições serão mantidas.","Se conservará su configuración.","Your settings will be preserved."],
+ ["Atualizar","Actualizar","Update"],
+ ["Mais tarde","Más tarde","Later"],
+ ["A descarregar e verificar a atualização...","Descargando y verificando la actualización...","Downloading and verifying the update..."],
+ ["Não foi possível preparar a atualização.","No se pudo preparar la actualización.","Could not prepare the update."],
+ ["Não foi possível iniciar o instalador.","No se pudo iniciar el instalador.","Could not start the installer."],
  ["AUTO não confirmado. Sair mesmo assim?","No se ha confirmado AUTO. ¿Salir de todos modos?","AUTO was not confirmed. Exit anyway?"],
  [
   "Ampliar esquema",

@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace AG4O3A {
 static class Program {
- public const string Version="1.0.5";public static bool Demo,Test,LiveTest;public static string TestOutput;
+ public static string UpdateInstaller;
+ public const string Version="1.0.6";public static bool Demo,Test,LiveTest;public static string TestOutput;
  [DllImport("user32.dll")]static extern bool SetProcessDPIAware();
  [STAThread]static void Main(string[] args){
   Test=args.Contains("--self-test")||args.Contains("--ui-test")||args.Contains("--live-test");Demo=args.Contains("--demo")||args.Contains("--ui-test");LiveTest=args.Contains("--live-test");TestOutput=args.LastOrDefault(a=>a.StartsWith("--output="));TestOutput=TestOutput==null?AppDomain.CurrentDomain.BaseDirectory:TestOutput.Substring(9);
@@ -22,6 +23,13 @@ static class Program {
    Profile p=Test?new Profile():Profile.Load();using(var form=new MainForm(p,signal)){Application.Run(form);}
   }catch(Exception ex){Storage.Log(ex.ToString());if(Test){File.WriteAllText(Path.Combine(TestOutput,"ui-error.txt"),ex.ToString());Environment.ExitCode=1;}else MessageBox.Show(ex.Message,"AG 4O3A",MessageBoxButtons.OK,MessageBoxIcon.Error);}
   finally{if(signal!=null)signal.Dispose();if(mutex!=null){if(owned)mutex.ReleaseMutex();mutex.Dispose();}}
+  if(UpdateInstaller!=null){
+   try{
+    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(UpdateInstaller){
+     UseShellExecute=true, Arguments="/DIR=\""+AppDomain.CurrentDomain.BaseDirectory.TrimEnd('\\')+"\""
+    });
+   }catch(Exception ex){MessageBox.Show(Lang.T("Não foi possível iniciar o instalador.")+"\n"+ex.Message,"AG 4O3A");}
+  }
  }
 }
 public partial class MainForm : Form {
@@ -40,10 +48,12 @@ public partial class MainForm : Form {
   activate.Interval=200;activate.Tick+=delegate{if(signal!=null&&signal.WaitOne(0)){Show();if(WindowState==FormWindowState.Minimized)WindowState=FormWindowState.Normal;Activate();BringToFront();}};activate.Start();
   Shown+=async delegate{for(int i=0;i<8;i++){names[i].GradientHeight=tags[i].GradientHeight=names[i].Height+tags[i].Height;tags[i].GradientOffset=names[i].Height;}if(Program.Demo){AG.Config=Tests.Fixture();AG.Connected=true;AG.Ports=new[]{Fields.Parse("auto=0 source=MANUAL band=5 rxant=2 txant=2 tx=0"),Fields.Parse("auto=0 source=MANUAL band=1 rxant=4 txant=4 tx=0")};Render();}else await Connect();timer.Start();if(Program.Test){try{if(!AG.Connected)throw new Exception("Teste sem ligação.");Capture(Path.Combine(Program.TestOutput,"main.png"));Settings=new SettingsForm(this);Settings.Show();Settings.CapturePages(Program.TestOutput);if(Program.Demo)Settings.CaptureLanguages(Program.TestOutput);Settings.Close();using(var dialog=new ConnectionForm(Profile)){dialog.Show();UI.Capture(dialog,Path.Combine(Program.TestOutput,"connection.png"));dialog.Close();}File.WriteAllText(Path.Combine(Program.TestOutput,"ui-test.txt"),"PASS: executable renders main and settings; no hardware writes");}catch(Exception ex){File.WriteAllText(Path.Combine(Program.TestOutput,"ui-error.txt"),ex.ToString());Environment.ExitCode=1;}Close();}};
   EnableWindowResize();Positions.Attach(this,"main",true);FormClosing+=PrepareExit;
+  Shown+=async delegate{await CheckUpdates(false);};
   FormClosed+=delegate{timer.Stop();activate.Stop();if(Settings!=null&&!Settings.IsDisposed)Settings.Close();};
  }
  bool preparingExit,exitReady;
  void PrepareExit(object sender,FormClosingEventArgs e){
+  if(updateDownloading){e.Cancel=true;return;}
   if(exitReady || Program.Test || Program.Demo || e.CloseReason!=CloseReason.UserClosing) return;
   if(!AG.Connected && !Busy) return;
   e.Cancel=true;
@@ -70,7 +80,7 @@ public partial class MainForm : Form {
    Close();
   }finally{
    preparingExit=false;
-   if(!exitReady && !IsDisposed) timer.Start();
+   if(!exitReady && !IsDisposed){Program.UpdateInstaller=null;timer.Start();}
   }
  }
  protected override void Dispose(bool disposing){if(disposing){timer.Dispose();activate.Dispose();tips.Dispose();Follow.Dispose();AG.Dispose();}base.Dispose(disposing);}

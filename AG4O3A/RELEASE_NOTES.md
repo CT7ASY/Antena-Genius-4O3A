@@ -1,21 +1,23 @@
-# AG 4O3A 1.0.5
+# AG 4O3A 1.0.6
 
 ## Novidades
 
-- Durante o PTT, a antena de transmissão e o respetivo botão A/B ficam encarnados. Ao terminar a transmissão, regressam às cores normais.
-- Ao fechar a aplicação, as portas com FlexRadio configurado passam para AUTO após confirmação do Antenna Genius, permitindo que a caixa continue a acompanhar as bandas.
-- Se a mudança para AUTO for bloqueada durante transmissão ou não for confirmada, é apresentado um aviso com a possibilidade de cancelar o fecho.
+- Verificação automática de novas versões ao iniciar a aplicação.
+- Aviso de atualização disponível com os botões **Atualizar** e **Mais tarde**.
+- Descarga do instalador e verificação SHA-256 antes da instalação.
+- Verificação manual em **Sobre → Verificar atualizações**.
+- Atualização na pasta da aplicação, mantendo as definições guardadas do utilizador.
 
-## Funcionamento
+## Como atualizar
 
-A passagem de MANUAL para FLEX ocorre no arranque do rádio ou numa mudança efetiva de banda detetada pela rede. Selecionar novamente a mesma banda mantém MANUAL. O acompanhamento automático requer acesso ao Flex pela rede.
+Quem utiliza a versão 1.0.5 ou anterior deve instalar esta versão uma vez para ativar a nova funcionalidade. Transfira **Instalar-AG-4O3A-1.0.6.exe**, feche a aplicação e execute o instalador.
 
-## Instalação
+Nas atualizações seguintes, o botão **Atualizar** descarrega e verifica o instalador. A aplicação fecha e abre o assistente de instalação. O Windows poderá pedir autorização.
 
-Feche a aplicação e execute **Instalar-AG-4O3A-1.0.5.exe**. Também está disponível **AG-4O3A-1.0.5-portatil.zip**. A pasta de instalação é `C:\CT7ASY\AG 4O3A`.
+Também está disponível **AG-4O3A-1.0.6-portatil.zip**. Requer Windows 10/11 e .NET Framework 4.8.
 
-Requer Windows 10/11 e .NET Framework 4.8. As preferências existentes são mantidas.
+## Validação
 
-Validação com testes internos, interface e PTT simulado nas portas A/B. Indicação de PTT confirmada pelo utilizador com o rádio. A confirmação de AUTO no fecho foi testada com equipamento simulado.
+Testes internos e da interface aprovados. Consulta real ao GitHub, comparação de versões, descarga e verificação do instalador testadas, incluindo rejeição de ficheiros alterados. A instalação completa iniciada pelo botão Atualizar ainda requer validação com uma versão posterior.
 
 Desenvolvido por Eduardo Arraia — CT7ASY. Software de distribuição gratuita, com código-fonte sob licença MIT.

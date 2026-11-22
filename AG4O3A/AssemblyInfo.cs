@@ -4,5 +4,5 @@
 [assembly: AssemblyCompany("Eduardo Arraia - CT7ASY")]
 [assembly: AssemblyProduct("AG 4O3A")]
 [assembly: AssemblyCopyright("Eduardo Arraia - CT7ASY. Software de distribuição gratuita.")]
-[assembly: AssemblyVersion("1.0.5.0")]
-[assembly: AssemblyFileVersion("1.0.5.0")]
+[assembly: AssemblyVersion("1.0.6.0")]
+[assembly: AssemblyFileVersion("1.0.6.0")]

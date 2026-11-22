@@ -1,5 +1,11 @@
 # Histórico de versões
 
+## 1.0.6 — 22 de novembro de 2026
+
+- Verificação de atualizações ao iniciar e no separador Sobre.
+- Botão Atualizar para descarregar e verificar o instalador antes de o abrir.
+- Preservação das definições e da pasta da aplicação durante a atualização.
+
 ## 1.0.5 — 22 de novembro de 2026
 
 - Antena de transmissão e botão A/B encarnados durante o PTT, com reposição da cor em receção.
