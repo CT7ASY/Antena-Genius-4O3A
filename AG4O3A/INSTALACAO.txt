@@ -10,12 +10,12 @@ https://github.com/CT7ASY/Antena-Genius-4O3A/releases/latest
 
 INSTALADOR
 1. Feche o AG 4O3A, se estiver aberto.
-2. Execute Instalar-AG-4O3A-1.0.0.exe.
+2. Execute Instalar-AG-4O3A-1.0.5.exe.
 3. Siga as instruções. Pasta de instalação: C:\CT7ASY\AG 4O3A.
 4. Abra a aplicação pelo atalho do Ambiente de Trabalho ou pelo menu Iniciar.
 
 VERSÃO PORTÁTIL
-Extraia todos os ficheiros de AG-4O3A-1.0.0-portatil.zip para uma pasta
+Extraia todos os ficheiros de AG-4O3A-1.0.5-portatil.zip para uma pasta
 e execute AG4O3A.exe. Não execute diretamente dentro do ZIP.
 
 PRIMEIRA LIGAÇÃO

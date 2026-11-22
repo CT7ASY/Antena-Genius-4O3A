@@ -1,19 +1,21 @@
-# AG 4O3A 1.0.0
+# AG 4O3A 1.0.5
 
-Primeira versão pública, gratuita, desenvolvida por Eduardo Arraia — CT7ASY.
+## Novidades
 
-- Controlo do Antenna Genius v4, com ligações local e remota.
-- Seleção de antenas nas portas A/B e integração FlexRadio.
-- Configuração de antenas, bandas e rede; diagramas BCD/P2P.
-- Interface em português, espanhol e inglês, janela redimensionável e instância única.
-- Código-fonte disponível sob licença MIT.
+- Durante o PTT, a antena de transmissão e o respetivo botão A/B ficam encarnados. Ao terminar a transmissão, regressam às cores normais.
+- Ao fechar a aplicação, as portas com FlexRadio configurado passam para AUTO após confirmação do Antenna Genius, permitindo que a caixa continue a acompanhar as bandas.
+- Se a mudança para AUTO for bloqueada durante transmissão ou não for confirmada, é apresentado um aviso com a possibilidade de cancelar o fecho.
+
+## Funcionamento
+
+A passagem de MANUAL para FLEX ocorre no arranque do rádio ou numa mudança efetiva de banda detetada pela rede. Selecionar novamente a mesma banda mantém MANUAL. O acompanhamento automático requer acesso ao Flex pela rede.
 
 ## Instalação
 
-Transfira **Instalar-AG-4O3A-1.0.0.exe** ou extraia **AG-4O3A-1.0.0-portatil.zip** e execute AG4O3A.exe. Requer Windows 10/11 e .NET Framework 4.8. A instalação utiliza C:\CT7ASY\AG 4O3A.
+Feche a aplicação e execute **Instalar-AG-4O3A-1.0.5.exe**. Também está disponível **AG-4O3A-1.0.5-portatil.zip**. A pasta de instalação é `C:\CT7ASY\AG 4O3A`.
 
-Na primeira utilização, configure o endereço do seu equipamento na engrenagem. O pacote não inclui perfis de ligação pessoais. SHA256SUMS.txt permite verificar os ficheiros transferidos.
+Requer Windows 10/11 e .NET Framework 4.8. As preferências existentes são mantidas.
 
-Stack e Saída estão preparados para consulta; edição ainda indisponível. Verificar atualizações abre as Releases do GitHub.
+Validação com testes internos, interface e PTT simulado nas portas A/B. Indicação de PTT confirmada pelo utilizador com o rádio. A confirmação de AUTO no fecho foi testada com equipamento simulado.
 
-Validação desta versão: compilação do executável e instalador, testes internos e teste da interface com dados de demonstração aprovados, sem escrita no equipamento.
+Desenvolvido por Eduardo Arraia — CT7ASY. Software de distribuição gratuita, com código-fonte sob licença MIT.

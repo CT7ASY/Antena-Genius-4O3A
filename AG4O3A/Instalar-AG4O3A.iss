@@ -1,4 +1,4 @@
-﻿#define AppVersion "1.0.0"
+﻿#define AppVersion "1.0.5"
 [Setup]
 AppId={{B62F7EA8-2E66-4619-BBCD-66AD17C7FD79}
 AppName=AG 4O3A
@@ -22,7 +22,7 @@ UninstallDisplayIcon={app}\AG4O3A.exe
 SetupIconFile=AG4O3A.ico
 OutputDir=dist
 OutputBaseFilename=Instalar-AG-4O3A-{#AppVersion}
-VersionInfoVersion=1.0.0.0
+VersionInfoVersion=1.0.5.0
 [Languages]
 Name: "portuguese"; MessagesFile: "compiler:Languages\Portuguese.isl"
 Name: "spanish"; MessagesFile: "compiler:Languages\Spanish.isl"

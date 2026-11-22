@@ -26,13 +26,13 @@ Software de distribuição gratuita para Windows.
 
 Na [versão mais recente](https://github.com/CT7ASY/Antena-Genius-4O3A/releases/latest), transfira o instalador ou o ZIP portátil. Requer Windows 10/11 e .NET Framework 4.8.
 
-- **Instalador:** execute `Instalar-AG-4O3A-1.0.0.exe`. A pasta de instalação é `C:\CT7ASY\AG 4O3A`.
+- **Instalador:** execute `Instalar-AG-4O3A-1.0.5.exe`. A pasta de instalação é `C:\CT7ASY\AG 4O3A`.
 - **Portátil:** extraia todos os ficheiros do ZIP para uma pasta e execute `AG4O3A.exe`.
 - Abra a engrenagem e configure o endereço do seu equipamento. O endereço inicial `127.0.0.1` e o hostname remoto de exemplo devem ser substituídos pelos seus dados.
 
 A aplicação instalada não precisa de PowerShell. As preferências ficam em `%LOCALAPPDATA%\CT7ASY\AG4O3A`; a palavra-passe remota é protegida pelo Windows para o utilizador atual.
 
-Consulte as [instruções de instalação](AG4O3A/INSTALACAO.txt), o [histórico de versões](AG4O3A/CHANGELOG.md) e os [resumos SHA-256 da versão 1.0.0](AG4O3A/SHA256SUMS.txt).
+Consulte as [instruções de instalação](AG4O3A/INSTALACAO.txt), o [histórico de versões](AG4O3A/CHANGELOG.md) e os [resumos SHA-256 da versão 1.0.5](AG4O3A/SHA256SUMS.txt).
 
 ## Funcionalidades em preparação
 

@@ -82,6 +82,16 @@ public class AGClient : IDisposable {
  public void SetMode(int port,string mode){if(!new[]{"AUTO","FLEX","MANUAL"}.Contains(mode))throw new Exception("Modo inválido.");Guard();if(mode=="FLEX"&&Mode(Ports[port])=="MANUAL"&&Ports[port].Int("band")==0&&(Ports[port].Int("rxant")>0||Ports[port].Int("txant")>0)){Select(port,0);Guard();}if(mode=="FLEX"&&Ports[port].Get("auto")=="1"&&Ports[port].Get("source")=="FLEX"){Command("port set "+(port+1)+" source=MANUAL");WaitMode(port,"MANUAL");Guard();}Command("port set "+(port+1)+" source="+mode);WaitMode(port,mode);}
  public void Select(int port,int ant){Guard();int tx=0;string extra=" auto=0 source=MANUAL band=0";if(ant>0){var a=Config.Antennas.First(x=>x.Int("id")==ant);int rxMask=Convert.ToInt32(a.Get("rx"),16),txMask=Convert.ToInt32(a.Get("tx"),16),allowed=txMask==0?rxMask:rxMask&txMask;var bands=Enumerable.Range(0,16).Where(i=>(allowed&(1<<i))!=0).ToArray();if(bands.Length==0)throw new Exception("Antena sem bandas RX/TX compatíveis.");tx=txMask==0?0:ant;extra=bands.Contains(Ports[port].Int("band"))?"":" auto=0 source=MANUAL band="+bands[0];}Guard();if(ant>0&&(Ports[1-port].Int("rxant")==ant||Ports[1-port].Int("txant")==ant)){Select(1-port,0);Guard();if(Ports[1-port].Int("rxant")==ant||Ports[1-port].Int("txant")==ant)throw new Exception("A outra saída não confirmou a libertação da antena.");if(extra=="")extra=" auto=0 source=MANUAL";}Guard();Command("port set "+(port+1)+extra+" rxant="+ant+" txant="+tx);DateTime end=DateTime.UtcNow.AddSeconds(2);do{Drain();if(Ports[port].Int("rxant")==ant&&Ports[port].Int("txant")==tx)return;Thread.Sleep(50);}while(DateTime.UtcNow<end);throw new Exception("Seleção não confirmada.");}
  public void Apply(IEnumerable<string> commands){foreach(string cmd in commands){Guard();Command(cmd);string[] parts=cmd.Split(' ');Fields actual;if(parts[0]=="conf")actual=Get("conf get");else if(parts[0]=="flex")actual=Get("flex get "+parts[2]);else actual=List(parts[0]).First(x=>x.Get("id")==parts[2]);foreach(var f in Fields.Parse(cmd)){bool same=f.Key.StartsWith("freq_")?Validation.Frequency(actual.Get(f.Key))==Validation.Frequency(f.Value):actual.Get(f.Key)==f.Value;if(!same)throw new Exception("O equipamento não confirmou "+f.Key+". Algumas alterações podem ter sido guardadas.");}}Reload();}
+ public void AutoBeforeExit(){
+  for(int port=0;port<Ports.Length;port++){
+   if(string.IsNullOrWhiteSpace(Config.Flex[port].Get("serial"))) continue;
+   Drain();
+   if(Ports[port].Get("auto")=="1") continue;
+   SetMode(port,"AUTO");
+   if(Ports[port].Get("auto")!="1")
+    throw new Exception("AUTO não confirmado na porta "+(port==0?"A":"B")+".");
+  }
+ }
  public void Dispose(){Connected=false;wire.Dispose();Ports=new[]{new Fields(),new Fields()};}
 }
 public static class Validation {

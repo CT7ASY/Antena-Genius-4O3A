@@ -1,5 +1,11 @@
 # Histórico de versões
 
+## 1.0.5 — 22 de novembro de 2026
+
+- Antena de transmissão e botão A/B encarnados durante o PTT, com reposição da cor em receção.
+- Passagem para AUTO ao fechar, nas portas com FlexRadio configurado, após confirmação da caixa.
+- Aviso e possibilidade de cancelar o fecho quando AUTO não é confirmado.
+
 ## 1.0.0 — 30 de outubro de 2026
 
 Primeira versão pública do AG 4O3A.
